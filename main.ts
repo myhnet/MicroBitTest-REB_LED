@@ -11,8 +11,14 @@ function RGB_LED (RED: number, GREEN: number, BLUE: number, TIME: number) {
     basic.pause(TIME)
 }
 basic.forever(function () {
-    pins.digitalWritePin(DigitalPin.P0, 0)
-    basic.pause(500)
-    pins.digitalWritePin(DigitalPin.P0, 1)
-    basic.pause(500)
+    RGB_LED(255, 0, 0, 500)
+    RGB_LED(0, 255, 0, 500)
+    RGB_LED(0, 0, 255, 500)
+    RGB_LED(0, 255, 255, 500)
+    RGB_LED(255, 0, 255, 500)
+    RGB_LED(255, 255, 0, 500)
+    RGB_LED(192, 255, 62, 500)
+    RGB_LED(148, 0, 211, 500)
+    RGB_LED(188, 238, 0, 500)
+    RGB_LED(0, 197, 205, 500)
 })
